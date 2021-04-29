@@ -1,0 +1,33 @@
+.response {
+    list-style: none;
+    float: left;
+    padding: 0px;
+    border: 1px solid black;
+    margin-top:0px;
+}
+.searchInput, .response{
+    width: 250px;
+    background: white;
+}
+a:link{
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:visited {
+    text-decoration: none;
+    color: black;
+  } 
+
+body{
+    background-image: url(../img/background-restaurant.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main{
+    background-color: white;
+    margin: 20% 25% 0 25%;
+    box-shadow: black 5px 5px 5px;
+}
