@@ -26,8 +26,9 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#main{
+.main{
     background-color: white;
-    margin: 20% 25% 0 25%;
+    margin: 10% 25% 0 25%;
     box-shadow: black 5px 5px 5px;
+    padding: 2%;
 }

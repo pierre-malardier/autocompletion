@@ -5,7 +5,7 @@ if (isset($_POST['search'])) {
 
     $input = $_POST['input'];
 
-    $query = $db->prepare("SELECT * FROM restaurant WHERE restaurant_nom LIKE '%$input%'");
+    $query = $db->prepare("SELECT * FROM restaurant WHERE restaurant_nom LIKE '$input%'");
     $query->execute();
     $result = $query->fetchAll(PDO::FETCH_ASSOC);
 
@@ -15,7 +15,7 @@ if (isset($_POST['search'])) {
 
         foreach ($result as $restaurant) {
             $resto = $restaurant['restaurant_nom'];
-            $response .= "<li><a href='pages/recherche.php?search=$resto'>" . $restaurant['restaurant_nom'] . "</a></li>";
+            $response .= "<li><a href='recherche.php?search=$resto'>" . $restaurant['restaurant_nom'] . "</a></li>";
         }
         $response .= "</ul>";
     }
